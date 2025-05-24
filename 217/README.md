@@ -17,3 +17,5 @@ Creating the dictionary results in **O(n)**.
 2. Iterate through the list and check if the current int is in the set. If it is, return True. If not, add the item to the set and continue to iterate. At the end of the loop, return False (no duplicates found).
 ### Time Complexity
 Creating an empty set is O(1), iterating through the list is O(n), O(1) to lookup current item in the set (set is implemented with dictionary so it supports constant search) = O(n + 2) = **O(n)**
+### Space Complexity
+Set is **O(n)** (holds n-1 elements for case where duplicate item is in the last index of the list)
